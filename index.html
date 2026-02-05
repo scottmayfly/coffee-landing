@@ -14,48 +14,27 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- Site CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
-<!-- Microsoft Omnichannel Live Chat Widget -->
-<script 
-    id="Microsoft_Omnichannel_LCWidget"
-    src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
-    onerror="(function(el){
-        el.parentNode.removeChild(el);
-        var s=document.createElement('script');
-        s.src='https://ocprodocprodnamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';
-        s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');
-        s.setAttribute('data-app-id', '4076e30e-e12b-44b0-b430-9b268f65059e');
-        s.setAttribute('data-lcw-version', 'prod');
-        s.setAttribute('data-org-id', '45f2d356-fe00-f111-8c77-6045bd00811a');
-        s.setAttribute('data-org-url', 'https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com');
-        document.body.appendChild(s);
-    })(this);"
-    data-app-id="4076e30e-e12b-44b0-b430-9b268f65059e"
-    data-lcw-version="prod"
-    data-org-id="45f2d356-fe00-f111-8c77-6045bd00811a"
-    data-org-url="https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com"
-    async>
-</script>
-
-
+  <!-- Header -->
   <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="#home" aria-label="Tasty Coffee Roasters">Tasty Coffee<span class="dot">.</span></a>
+      <a href="#home" class="brand">Tasty Coffee<span class="dot">.</span></a>
       <button id="navToggle" class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
-      <ul id="navMenu" class="nav-menu">
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="#subscribe">Subscribe</a></li>
-        <li><a href="#visit" class="btn btn--sm">Visit Us</a></li>
+      <ul id="navMenu" class="nav-menu" role="menu">
+        <li role="none"><a role="menuitem" href="#menu">Menu</a></li>
+        <li role="none"><a role="menuitem" href="#story">Our Story</a></li>
+        <li role="none"><a role="menuitem" href="#subscribe">Subscribe</a></li>
+        <li role="none"><a role="menuitem" href="#visit">Visit Us</a></li>
       </ul>
     </nav>
   </header>
@@ -64,7 +43,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-media" role="img" aria-label="A cup of coffee on a rustic table">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1920&q=80" alt="" />
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1920&q=80" alt="Coffee cup on rustic wooden table" loading="eager" />
         <div class="overlay"></div>
       </div>
       <div class="hero-content container">
@@ -90,7 +69,7 @@
       </header>
       <div class="grid cards">
         <article class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Espresso shot" />
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Shot of espresso with rich crema" loading="lazy" />
           <div class="card-body">
             <h3>Single-Origin Espresso</h3>
             <p>Rich crema, bright acidity, notes of cacao and citrus.</p>
@@ -98,7 +77,7 @@
           </div>
         </article>
         <article class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Latte art" />
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Classic latte with silky microfoam" loading="lazy" />
           <div class="card-body">
             <h3>Classic Latte</h3>
             <p>Silky microfoam over a bold double shot—comfort in a cup.</p>
@@ -106,7 +85,7 @@
           </div>
         </article>
         <article class="card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1527161153332-99adcc6f2966?auto=format&fit=crop&w=800&q=80" alt="Cold brew" />
+          <img src="https://images.unsplash.com/photo-1527161153332-99adcc6f2966?auto=format&fit=crop&w=800&q=80" alt="Glass of vanilla cold brew with ice" loading="lazy" />
           <div class="card-body">
             <h3>Vanilla Cold Brew</h3>
             <p>Slow-steeped, subtly sweet, and irresistibly smooth.</p>
@@ -114,8 +93,8 @@
           </div>
         </article>
       </div>
-      <div class="center">
-        <a class="btn btn--ghost" href="#visit">See full menu at the bar →</a>
+      <div class="center" style="margin-top:1rem;">
+        <a class="btn btn--sm btn--ghost" href="#visit">See full menu at the bar →</a>
       </div>
     </section>
 
@@ -130,10 +109,10 @@
             <li>Seasonal micro-lots</li>
             <li>Zero‑waste packaging</li>
           </ul>
-          <a class="btn" href="#subscribe">Subscribe & Save 15%</a>
+          <a class="btn" href="#subscribe">Subscribe &amp; Save 15%</a>
         </div>
         <div class="story-photo">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=1200&q=80" alt="Coffee beans being roasted" />
+          <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=1200&q=80" alt="Barista pouring coffee in a cozy café" loading="lazy" />
         </div>
       </div>
     </section>
@@ -181,24 +160,26 @@
       </header>
       <div class="visit-grid">
         <iframe
-          title="Map to Tasty Coffee"
           src="https://www.google.com/maps?q=Times+Square+New+York&output=embed"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Map to our shop">
         </iframe>
+
         <div class="visit-card">
           <h3>Questions or catering?</h3>
-          <p>Email: hello@tasty.coffee<br/>Phone: +1 (555) 010-2026</p>
-          <a class="btn btn--ghost" href="mailto:hello@tasty.coffee">Say hello</a>
+          <p>Email: <a href="mailto:hello@tasty.coffee">hello@tasty.coffee</a><br/>Phone: +1 (555) 010-2026</p>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand--footer" href="#home">Tasty Coffee<span class="dot">.</span></a>
+        <a href="#home" class="brand brand--footer">Tasty Coffee<span class="dot">.</span></a>
         <p class="muted">© <span id="year"></span> Tasty Coffee Roasters. All rights reserved.</p>
       </div>
       <ul class="footer-links">
@@ -217,9 +198,32 @@
     </div>
   </footer>
 
+<!-- Microsoft Omnichannel Live Chat Widget -->
+<script 
+    id="Microsoft_Omnichannel_LCWidget"
+    src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+    onerror="(function(el){
+        el.parentNode.removeChild(el);
+        var s=document.createElement('script');
+        s.src='https://ocprodocprodnamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';
+        s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');
+        s.setAttribute('data-app-id', '4076e30e-e12b-44b0-b430-9b268f65059e');
+        s.setAttribute('data-lcw-version', 'prod');
+        s.setAttribute('data-org-id', '45f2d356-fe00-f111-8c77-6045bd00811a');
+        s.setAttribute('data-org-url', 'https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com');
+        document.body.appendChild(s);
+    })(this);"
+    data-app-id="4076e30e-e12b-44b0-b430-9b268f65059e"
+    data-lcw-version="prod"
+    data-org-id="45f2d356-fe00-f111-8c77-6045bd00811a"
+    data-org-url="https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com"
+    async>
+</script>
+
+  <!-- Your site JS -->
   <script src="script.js"></script>
 </body>
 </html>
-
 ``
+
 
