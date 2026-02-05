@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasty Coffee Roasters | Small-batch, Big Flavor</title>
+  <meta name="description" content="Small-batch coffee, artfully roasted. Freshly brewed. Ethically sourced. Visit Tasty Coffee or order online." />
+  <meta name="theme-color" content="#2A201C" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Tasty Coffee Roasters" />
+  <meta property="og:description" content="Small-batch coffee, artfully roasted. Freshly brewed. Ethically sourced." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Optional: Chatbot widget (uncomment and paste your provider script) -->
+  <!--
+  <script>
+    https://ccaas-embed-prod.azureedge.net/widget/index.html?dynamicsUrl=https://orgc828f5c5.crm.dynamics.com
+  </script>
+  -->
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Tasty Coffee Roasters">Tasty Coffee<span class="dot">.</span></a>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#visit" class="btn btn--sm">Visit Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="A cup of coffee on a rustic table">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1920&q=80" alt="" />
+        <div class="overlay"></div>
+      </div>
+      <div class="hero-content container">
+        <h1>A better day starts with <span class="accent">better coffee</span>.</h1>
+        <p>Small-batch, ethically sourced beans roasted to perfection. Brewed fresh, served warm, loved always.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#menu">Explore Menu</a>
+          <a class="btn btn--ghost" href="#subscribe">Get Fresh Beans</a>
+        </div>
+        <div class="badges">
+          <span>☕ Small‑batch roasted</span>
+          <span>🌍 Ethically sourced</span>
+          <span>🚚 Free local delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="menu" class="section container">
+      <header class="section-head">
+        <h2>Signature Picks</h2>
+        <p>From single-origin espressos to velvety cold brews—crafted for every mood.</p>
+      </header>
+      <div class="grid cards">
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Espresso shot" />
+          <div class="card-body">
+            <h3>Single-Origin Espresso</h3>
+            <p>Rich crema, bright acidity, notes of cacao and citrus.</p>
+            <div class="price">$3.50</div>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Latte art" />
+          <div class="card-body">
+            <h3>Classic Latte</h3>
+            <p>Silky microfoam over a bold double shot—comfort in a cup.</p>
+            <div class="price">$4.50</div>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1527161153332-99adcc6f2966?auto=format&fit=crop&w=800&q=80" alt="Cold brew" />
+          <div class="card-body">
+            <h3>Vanilla Cold Brew</h3>
+            <p>Slow-steeped, subtly sweet, and irresistibly smooth.</p>
+            <div class="price">$4.00</div>
+          </div>
+        </article>
+      </div>
+      <div class="center">
+        <a class="btn btn--ghost" href="#visit">See full menu at the bar →</a>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="section section--alt">
+      <div class="container grid two-col">
+        <div>
+          <h2>Our Story</h2>
+          <p>We started Tasty Coffee with a simple promise: roast with integrity, brew with care, and serve with heart. We partner directly with farms, pay fairly, and roast in small batches to bring out each bean’s unique character.</p>
+          <ul class="checks">
+            <li>Direct trade partners</li>
+            <li>Seasonal micro-lots</li>
+            <li>Zero‑waste packaging</li>
+          </ul>
+          <a class="btn" href="#subscribe">Subscribe & Save 15%</a>
+        </div>
+        <div class="story-photo">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=1200&q=80" alt="Coffee beans being roasted" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section container">
+      <header class="section-head">
+        <h2>Loved by coffee people</h2>
+      </header>
+      <div class="grid quotes">
+        <blockquote>
+          “The crema on their espresso is unreal. My daily ritual now.”
+          <cite>— Priya S.</cite>
+        </blockquote>
+        <blockquote>
+          “Subscription beans arrived fresh and fragrant—best home brews I’ve had.”
+          <cite>— Daniel K.</cite>
+        </blockquote>
+        <blockquote>
+          “Beautiful space, kinder staff, and the cold brew? Perfection.”
+          <cite>— Aisha R.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section id="subscribe" class="section section--cta">
+      <div class="container cta">
+        <h2>Never run out of great coffee</h2>
+        <p>Get freshly roasted beans delivered on your schedule. Cancel anytime.</p>
+        <form class="subscribe-form" name="subscribe" onsubmit="return subscribe(event)">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn">Start Subscription</button>
+          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section id="visit" class="section container">
+      <header class="section-head">
+        <h2>Visit Us</h2>
+        <p>123 Roast Street, Brewtown • Open 7:00–18:00 daily</p>
+      </header>
+      <div class="visit-grid">
+        <iframe
+          title="Map to Tasty Coffee"
+          src="https://www.google.com/maps?q=Times+Square+New+York&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="visit-card">
+          <h3>Questions or catering?</h3>
+          <p>Email: hello@tasty.coffee<br/>Phone: +1 (555) 010-2026</p>
+          <a class="btn btn--ghost" href="mailto:hello@tasty.coffee">Say hello</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#home">Tasty Coffee<span class="dot">.</span></a>
+        <p class="muted">© <span id="year"></span> Tasty Coffee Roasters. All rights reserved.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#story">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <div class="theme-switch">
+        <label class="switch">
+          <input id="themeToggle" type="checkbox" aria-label="Toggle dark mode">
+          <span class="slider"></span>
+        </label>
+        <span class="muted">Dark mode</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+``
