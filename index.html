@@ -22,13 +22,28 @@
 </head>
 <body>
   
-<!-- Dynamics Chat Widget -->
-<iframe 
-    src="https://ccaas-embed-prod.azureedge.net/widget/index.html?dynamicsUrl=https://orgc828f5c5.crm.dynamics.com"
-    width="380"
-    height="520"
-    style="border:none; position:fixed; bottom:20px; right:20px; z-index:9999; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.35);">
-</iframe>
+<!-- Microsoft Omnichannel Live Chat Widget -->
+<script 
+    id="Microsoft_Omnichannel_LCWidget"
+    src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+    onerror="(function(el){
+        el.parentNode.removeChild(el);
+        var s=document.createElement('script');
+        s.src='https://ocprodocprodnamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';
+        s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');
+        s.setAttribute('data-app-id', '4076e30e-e12b-44b0-b430-9b268f65059e');
+        s.setAttribute('data-lcw-version', 'prod');
+        s.setAttribute('data-org-id', '45f2d356-fe00-f111-8c77-6045bd00811a');
+        s.setAttribute('data-org-url', 'https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com');
+        document.body.appendChild(s);
+    })(this);"
+    data-app-id="4076e30e-e12b-44b0-b430-9b268f65059e"
+    data-lcw-version="prod"
+    data-org-id="45f2d356-fe00-f111-8c77-6045bd00811a"
+    data-org-url="https://m-45f2d356-fe00-f111-8c77-6045bd00811a.us.omnichannelengagementhub.com"
+    async>
+</script>
+
 
   <header class="site-header">
     <nav class="nav container">
@@ -207,3 +222,4 @@
 </html>
 
 ``
+
